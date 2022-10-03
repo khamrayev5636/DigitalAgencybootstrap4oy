@@ -1,0 +1,120 @@
+/* Project start */
+
+.project {
+    padding: 60px 0 103px;
+}
+
+
+.project__desc {
+    max-width: 332px;
+    width: 100%;
+}
+
+.project__title  {
+    font-size: 20px;
+    line-height: 38px;
+    margin-bottom: 23px;
+    color:var(--body-subtitle);
+}
+
+.project__text{
+    font-size: 12px;
+    line-height: 22px;
+    color:var(--body-text);
+}
+
+.project__cards {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.project__images-box {
+    width: 100%;
+}
+
+.project__images {
+    max-width: 306px;
+    width: 100%;
+    height: 223px;
+    margin-bottom: 29px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.project__images-five {
+    max-width: 246px;
+    width: 100%;
+}
+
+.project__images-sex {
+    max-width: 386px;
+    width: 100%;
+}
+
+@include mobile-first (992px) {
+    
+    .project__desc {
+        max-width: 497px;
+        margin-bottom: 71px;
+    }
+    
+    .project__title {
+        font-size: 25px;
+        line-height: 47px;
+        margin-bottom: 18px;
+    }
+    
+    .project__text  {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    
+    .project__images-four , .project__images-five , .project__images-sex{
+        margin-bottom: 0;
+    }
+    
+    
+    .project__images-five {
+        max-width: 220px;
+        width: 100%;
+    }
+}
+
+@include mobile-first (1200px) {
+
+    .project {
+        padding: 141px 0 164px;
+    }
+
+    .project__images {
+        max-width: 382px;
+        width: 100%;
+        margin-bottom: 33px;
+    }
+    
+    .project__images-four , .project__images-five , .project__images-sex {
+        margin-bottom: 0;
+    }
+    
+    .project__images-three {
+        max-width: 365px;
+        width: 100%;
+    }
+    
+    .project__images-four  {
+        max-width: 401px;
+        width: 100%;
+    }
+    
+    .project__images-five {
+        max-width: 246px;
+        width: 100%;
+        margin: 0 30px !important;
+    }
+    
+    .project__images-sex {
+        max-width: 469px;
+        width: 100%;
+    }
+}
+/* Project end */

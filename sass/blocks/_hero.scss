@@ -2,13 +2,15 @@
 
 .hero {
     padding-top: 108px;
-    padding-bottom: 140px;
     background-image: url("../images/bg-header-line.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center calc(50% + 140px);
+    background-position: center calc(50% + 220px);
 }
 
+.hero__wrapper {
+    padding-bottom: 108px;
+}
 
 .hero__subtitle {
     font-weight: 700;
@@ -43,7 +45,6 @@
     background: linear-gradient(92.48deg, #FA8305 2.08%, #FB9E3C 117.25%);
     border-radius: 40px;
     text-decoration: none;
-    margin-bottom: 108px;
 }
 
 .hero__info {
@@ -61,6 +62,7 @@
         background-image: url("../images/hero-bg.svg");
         background-size: cover;
         background-position: center center;
+        margin-bottom: 83px !important;
     }
 
     .hero__button {
@@ -72,6 +74,10 @@
 
     .hero {
         background-position: calc(50% - 1px) calc(50% + 10px);
+    }
+
+    .hero__wrapper {
+        padding-bottom: 158px;
     }
 
     .hero__info {
