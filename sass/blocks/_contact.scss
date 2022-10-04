@@ -1,0 +1,170 @@
+/* Contact start */
+
+.contact {
+    padding-bottom: 69px;
+}
+
+.contact__info {
+    max-width: 296px;
+    width: 100%;
+}
+
+.contact__form-info {
+    max-width: 266px;
+    width: 100%;
+}
+
+.contact__title {
+    font-size: 20px;
+    line-height: 38px;
+    color:var(--body-subtitle);
+    margin-bottom: 13px;
+}
+
+.contact__text {
+    font-size: 12px;
+    line-height: 22px;
+    color:#525252;
+    margin-bottom: 41px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.contact__form {
+    max-width: 1170px;
+    width: 100%;
+    padding: 30px 23px 24px 21px;
+    background-color: #1b1b1b;
+    border-radius: 15px;
+}
+
+.contact__form-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color:var(--body-nav);
+}
+
+.contact__form-text {
+    font-size: 15px;
+    line-height: 22px;
+    color:var(--body-nav);
+    margin-bottom: 43px;
+}
+
+.form {
+    position: relative;
+}
+
+.form__input {
+    width: 275px;
+    height: 48px;
+    padding: 13px 0 13px 15px;
+    border: none;
+    border-radius: 8px;
+}
+
+::placeholder {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    color:#898989;
+}
+
+.form__button {
+    position: absolute;
+    top: calc(50% - 18px);
+    left: calc(50% + 45px);
+    font-size: 13px;
+    line-height: 20px;
+    color:var(--body-nav);
+    background-color: var(--body-button-background);
+    border-radius: 8px;
+    border: none;
+    
+}
+
+@include mobile-first (320px) {
+    
+    .form__button {
+        padding: 7px 5px;
+    }
+
+}
+
+@include mobile-first (375px) {
+    .form__button {
+        padding: 7px 11px 7px 16px;
+    }
+}
+
+
+@include mobile-first (768px) {
+    
+    
+    .contact {
+        padding-bottom: 148px;
+    }
+    
+    .contact__info {
+        max-width: 545px;
+        width: 100%;
+    }
+    
+    .contact__form-info {
+        max-width: 540px;
+        width: 100%;
+    }
+    
+    .contact__form {
+        padding: 40px 50px 42px 56px;
+    }
+    
+    .contact__title  {
+        font-size: 30px;
+        line-height: 56px;
+        margin-bottom: 32px;
+    }
+    
+    .contact__text {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 71px;
+    }
+    
+    .form__input {
+        width: 300px;
+    }
+    
+    .form__button {
+        left: calc(50% + 60px);
+    }
+    
+    .contact__form-title {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    
+    .contact__form-text {
+        font-size: 17px;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+}
+
+
+
+@include mobile-first (992px) {
+    .form__input {
+        width: 385px;
+    }
+
+    .form__button {
+        left: calc(50% + 100px);
+    }
+}
+
+/* Contact end */

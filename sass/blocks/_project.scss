@@ -23,10 +23,6 @@
     color:var(--body-text);
 }
 
-.project__cards {
-    max-width: 1200px;
-    width: 100%;
-}
 
 .project__images-box {
     width: 100%;
@@ -97,19 +93,18 @@
     }
     
     .project__images-three {
-        max-width: 365px;
+        max-width: 352px;
         width: 100%;
     }
     
     .project__images-four  {
-        max-width: 401px;
+        max-width: 401px !important;
         width: 100%;
     }
     
     .project__images-five {
         max-width: 246px;
         width: 100%;
-        margin: 0 30px !important;
     }
     
     .project__images-sex {

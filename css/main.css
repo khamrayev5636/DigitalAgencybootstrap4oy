@@ -224,7 +224,19 @@ body {
     padding: 16px 0;
   }
   .header__link:last-child {
-    margin-right: 67px;
+    margin-right: 0;
+  }
+  .header__item:nth-child(1) {
+    margin-right: 87px;
+  }
+  .header__item:nth-child(2) {
+    margin-right: 75px;
+  }
+  .header__item:nth-child(3) {
+    margin-right: 64px;
+  }
+  .header__item:nth-child(4) {
+    margin-right: 68px;
   }
 }
 /* Header end */
@@ -242,6 +254,7 @@ body {
 }
 
 .hero__subtitle {
+  font-size: 16px;
   font-weight: 700;
   line-height: 25px;
   color: #e87d0e;
@@ -295,6 +308,10 @@ body {
   }
   .hero__button {
     margin-bottom: 0;
+  }
+  .hero__subtitle {
+    font-size: 20px;
+    margin-bottom: 17px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -524,7 +541,7 @@ body {
 .carousel__item {
   max-width: 299px;
   width: 100%;
-  margin-right: 35px;
+  margin-right: 38px;
   padding: 30px 31px 24px 28px;
   background-color: var(--body-nav);
   box-shadow: 0px 4px 94px rgba(0, 0, 0, 0.05);
@@ -576,9 +593,9 @@ body {
 }
 .carousel__more::before {
   position: absolute;
-  top: 4px;
+  top: 5px;
   right: 0;
-  background-image: url("../../images/right.svg");
+  background-image: url("../images/moreright.svg");
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
@@ -638,6 +655,19 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .carousel__item {
+    max-width: 348px;
+    padding: 35px 39px 39px 35px;
+  }
+  .carousel__info-link {
+    margin-bottom: 19px;
+    padding: 6px 35px 7px 14px;
+  }
+  .carousel__item-text {
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 28px;
+  }
   .carousel__desc {
     max-width: 570px;
   }
@@ -683,11 +713,6 @@ body {
   font-size: 12px;
   line-height: 22px;
   color: var(--body-text);
-}
-
-.project__cards {
-  max-width: 1200px;
-  width: 100%;
 }
 
 .project__images-box {
@@ -748,17 +773,16 @@ body {
     margin-bottom: 0;
   }
   .project__images-three {
-    max-width: 365px;
+    max-width: 352px;
     width: 100%;
   }
   .project__images-four {
-    max-width: 401px;
+    max-width: 401px !important;
     width: 100%;
   }
   .project__images-five {
     max-width: 246px;
     width: 100%;
-    margin: 0 30px !important;
   }
   .project__images-sex {
     max-width: 469px;
@@ -800,9 +824,13 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+  .services {
+    padding-bottom: 125px !important;
+  }
   .services__info {
     max-width: 400px;
     width: 100%;
+    margin-bottom: 0;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -819,4 +847,242 @@ body {
     line-height: 26px;
   }
 }
-/* Services end *//*# sourceMappingURL=main.css.map */
+/* Services end */
+/* Contact start */
+.contact {
+  padding-bottom: 69px;
+}
+
+.contact__info {
+  max-width: 296px;
+  width: 100%;
+}
+
+.contact__form-info {
+  max-width: 266px;
+  width: 100%;
+}
+
+.contact__title {
+  font-size: 20px;
+  line-height: 38px;
+  color: var(--body-subtitle);
+  margin-bottom: 13px;
+}
+
+.contact__text {
+  font-size: 12px;
+  line-height: 22px;
+  color: #525252;
+  margin-bottom: 41px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__form {
+  max-width: 1170px;
+  width: 100%;
+  padding: 30px 23px 24px 21px;
+  background-color: #1b1b1b;
+  border-radius: 15px;
+}
+
+.contact__form-title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  color: var(--body-nav);
+}
+
+.contact__form-text {
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--body-nav);
+  margin-bottom: 43px;
+}
+
+.form {
+  position: relative;
+}
+
+.form__input {
+  width: 275px;
+  height: 48px;
+  padding: 13px 0 13px 15px;
+  border: none;
+  border-radius: 8px;
+}
+
+::placeholder {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  color: #898989;
+}
+
+.form__button {
+  position: absolute;
+  top: calc(50% - 18px);
+  left: calc(50% + 45px);
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--body-nav);
+  background-color: var(--body-button-background);
+  border-radius: 8px;
+  border: none;
+}
+
+@media only screen and (min-width: 320px) {
+  .form__button {
+    padding: 7px 5px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .form__button {
+    padding: 7px 11px 7px 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .contact {
+    padding-bottom: 148px;
+  }
+  .contact__info {
+    max-width: 545px;
+    width: 100%;
+  }
+  .contact__form-info {
+    max-width: 540px;
+    width: 100%;
+  }
+  .contact__form {
+    padding: 40px 50px 42px 56px;
+  }
+  .contact__title {
+    font-size: 30px;
+    line-height: 56px;
+    margin-bottom: 32px;
+  }
+  .contact__text {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 71px;
+  }
+  .form__input {
+    width: 300px;
+  }
+  .form__button {
+    left: calc(50% + 60px);
+  }
+  .contact__form-title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .contact__form-text {
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .form__input {
+    width: 385px;
+  }
+  .form__button {
+    left: calc(50% + 100px);
+  }
+}
+/* Contact end */
+/* Footer start */
+.footer {
+  padding: 22px 0 27px;
+  background-color: #1b1b1b;
+}
+
+.footer__text {
+  font-size: 12px;
+  color: var(--body-nav);
+  line-height: 23px;
+  margin-bottom: 0;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer__info-text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 25px;
+  color: var(--body-nav);
+}
+
+.footer__info-span {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--body-nav);
+}
+
+.footer__title {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 26px;
+  color: var(--body-nav);
+  margin-bottom: 20px;
+}
+
+.footer__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--body-nav);
+}
+
+.footer__contact-text {
+  max-width: 282px;
+  width: 100%;
+  line-height: 24px;
+  color: var(--body-nav);
+  margin-bottom: 11px;
+}
+
+.footer__contact-span {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--body-nav);
+}
+
+.footer__list {
+  margin-left: 45px !important;
+}
+
+.footer__wrapper {
+  margin-bottom: 56px;
+}
+
+.footer__bottom {
+  border-color: #d2d2d2;
+  margin-bottom: 29px;
+}
+
+.footer__text-bottom {
+  margin-right: 100px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 66px 0 29px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .footer__network {
+    padding-top: 110px !important;
+  }
+  .footer__list {
+    margin-left: 100px !important;
+  }
+}
+/* Footer end *//*# sourceMappingURL=main.css.map */
