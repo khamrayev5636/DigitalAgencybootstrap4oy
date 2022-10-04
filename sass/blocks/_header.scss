@@ -70,6 +70,9 @@
     line-height: 24px;
     color: #1a1a1a;
     text-decoration: none;
+    &:hover {
+        color: #1a1a1a;
+    }
 }
 
 
@@ -133,6 +136,9 @@
 
     .header__link {
         color:var(--body-nav);
+        &:hover {
+            color:var(--body-nav);  
+        }
     }
 
     .active::after {

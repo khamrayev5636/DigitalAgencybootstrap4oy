@@ -156,6 +156,9 @@ body {
   color: #1a1a1a;
   text-decoration: none;
 }
+.header__link:hover {
+  color: #1a1a1a;
+}
 
 .header__nav {
   background-color: var(--body-nav);
@@ -210,6 +213,9 @@ body {
     box-shadow: none;
   }
   .header__link {
+    color: var(--body-nav);
+  }
+  .header__link:hover {
     color: var(--body-nav);
   }
   .active::after {
